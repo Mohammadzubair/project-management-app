@@ -15,7 +15,7 @@ const DialogBox = forwardRef(function DialogBox({ children, buttonText }, ref) {
 
   return createPortal(
     <dialog
-      className="backdrop:bg-stone-900/90 p-4 rounded-md shadow-md"
+      className="backdrop:bg-stone-900/90 p-4 rounded-md shadow-md m-auto"
       ref={dialogBox}
     >
       {children}

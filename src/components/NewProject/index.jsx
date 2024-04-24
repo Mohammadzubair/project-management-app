@@ -47,7 +47,7 @@ const NewProject = ({ onAdd, onCancel }) => {
           Please make sure you provided a valid value for every input field.
         </p>
       </DialogBox>
-      <div className="w-[50%] mt-16 ml-10 h-full">
+      <div className="w-[50%] pt-16 pl-10 h-full">
         <menu className="flex items-center justify-end gap-4 my-4">
           <li>
             <button
@@ -67,7 +67,13 @@ const NewProject = ({ onAdd, onCancel }) => {
           </li>
         </menu>
         <div>
-          <InputBox ref={titleInputRef} type="text" required label="Title" />
+          <InputBox
+            autoFocus
+            ref={titleInputRef}
+            type="text"
+            required
+            label="Title"
+          />
           <InputBox
             ref={descriptionInputRef}
             label="Description"
